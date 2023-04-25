@@ -1,42 +1,67 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply px-[10px] flex flex-col max-w-[1280px] md:px-[20px] xl:p-0 xl:mx-auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  @apply text-[30px] md:text-[35px];
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  @apply text-[25px] md:text-[30px];
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h3 {
+  @apply text-[20px] md:text-[25px];
 }
 
-.card {
-  padding: 2em;
+p {
+  @apply text-[16px];
 }
 
-.read-the-docs {
-  color: #888;
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  @apply text-link hover:text-linkHover;
+  text-decoration: inherit;
+}
+a:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.base-hide{
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.hidden-left{
+  @apply base-hide;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hidden-right{
+  @apply base-hide;
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.hidden-center{
+  @apply base-hide;
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.linebreak{
+  line-break: strict;
 }

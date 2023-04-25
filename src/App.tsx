@@ -1,18 +1,30 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home";
-import Chords from "./pages/chords";
-import Testimonies from "./pages/testimonies";
+import Chords from "./pages/chords/chords";
+import Music from "./pages/music/music";
+import Navbar from "./global-components/Navbar";
+import Footer from "./global-components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/chords" element={<Chords />}></Route>
-        <Route path="/testimonies" element={<Testimonies />}></Route>
+        <Route
+          element={
+            <>
+              <Navbar />
+              <Outlet />
+              <Footer />
+            </>
+          }
+        >
+          <Route path="/" element={<Home />} />
+          <Route path="/chords" element={<Chords />} />
+          <Route path="/music" element={<Music />} />
+        </Route>
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
