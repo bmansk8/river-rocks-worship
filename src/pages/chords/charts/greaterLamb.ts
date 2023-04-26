@@ -1,4 +1,4 @@
-export const greaterLambChart = 
+export const greaterLamb = 
 `
 Am   E7   G   D   F   C   Dm   E7   x2
  
