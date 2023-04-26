@@ -1,6 +1,6 @@
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/home";
+import Home from "./pages/home/home";
 import Chords from "./pages/chords/chords";
 import Music from "./pages/music/music";
 import Navbar from "./global-components/Navbar";

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-  @apply px-[10px] flex flex-col max-w-[1280px] md:px-[20px] xl:p-0 xl:mx-auto;
+  @apply px-[20px] flex flex-col max-w-[1280px] md:px-[40px] xl:p-0 xl:mx-auto;
 }
 
 h1 {
@@ -20,6 +20,7 @@ h3 {
 
 p {
   @apply text-[16px];
+  font-family: 'Roboto';
 }
 
 a {
@@ -41,19 +42,19 @@ a:hover {
 .hidden-left{
   @apply base-hide;
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .hidden-right{
   @apply base-hide;
   transform: translateX(100%);
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .hidden-center{
   @apply base-hide;
   transform: translateY(100%);
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .show{

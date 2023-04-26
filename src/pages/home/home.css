@@ -1,0 +1,13 @@
+.headerBackground{
+    width: 100%;
+    @apply h-[200px] md:h-[400px] xl:h-[600px];
+    background-image: url('/images/groupPhoto1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutBackground{
+    background-image: url('/images/greyGarage.jpg');
+    background-position: right;
+    background-size: cover;
+}
