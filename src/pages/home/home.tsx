@@ -15,7 +15,7 @@ export default function Home() {
       <div className="container">
         <div
           ref={element1}
-          className="flex flex-col items-start text-left mb-[150px] p-5 bg-black mt-10 md:mt-[-35px] md:mx-[-40px] md:p-10 border-accent border-r-2 border-b-2"
+          className="flex flex-col items-start text-left mb-[150px] p-5 bg-black mt-10 md:mt-[-35px] md:mx-[-40px] md:p-10 border-accent border-b-2 border-r-2"
         >
           <h1>Home</h1>
           <p className="md:pr-[40%]">
@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex flex-col items-end text-right md:py-5 md:pl-[20%] xl:pl-[40%] mb-[150px] aboutBackground">
           <div ref={element2} className="hidden-right">
             <div className="bg-black opacity-[.75] p-5 md:mr-5">
-              <h1 className="text-[35px]">About</h1>
+              <h1 className="text-[35px]">Vision</h1>
               <p>
                 River Rocks Church is a church that disciples believers to have
                 a love for the Word of God, operate in the power of the Holy
